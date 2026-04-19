@@ -255,6 +255,62 @@ export const ResumeListTypography = styled(Typography)(({ theme }) => ({
   },
 }));
 
+export const COMPARISON_SATOSHI_FONT = `'Satoshi', sans-serif`;
+export const COMPARISON_FEATURE_BG = "rgba(37, 92, 254, 0.6)";
+export const COMPARISON_BORDER = "1px solid rgba(153, 153, 153, 0.5)";
+export const COMPARISON_BORDER_FAINT = "1px solid rgba(153, 153, 153, 0.3)";
+export const COMPARISON_TEXT_DARK = "#3D3D3D";
+
+export const COMPARISON_TABLE_CONTAINER_SX = {
+  border: "1px solid",
+  borderColor: "grey.400",
+  borderRadius: "8px",
+  overflow: "hidden",
+  bgcolor: "rgba(255, 255, 255, 0.2)",
+};
+
+export const COMPARISON_FEATURE_SURFACE_SX = {
+  bgcolor: COMPARISON_FEATURE_BG,
+  color: "white",
+  fontFamily: COMPARISON_SATOSHI_FONT,
+};
+
+export const COMPARISON_TABLE_HEADER_CELL_BASE_SX = {
+  fontWeight: 700,
+  borderBottom: COMPARISON_BORDER,
+  py: 2,
+  fontFamily: COMPARISON_SATOSHI_FONT,
+};
+
+export const COMPARISON_TABLE_BODY_CELL_BASE_SX = {
+  borderBottom: COMPARISON_BORDER,
+  py: 2,
+  color: COMPARISON_TEXT_DARK,
+  textAlign: "center",
+  fontFamily: COMPARISON_SATOSHI_FONT,
+};
+
+export const COMPARISON_MOBILE_CARD_SX = {
+  border: "1px solid",
+  borderColor: "grey.300",
+  borderRadius: "12px",
+  bgcolor: "white",
+};
+
+export const COMPARISON_MOBILE_FEATURE_BOX_SX = {
+  ...COMPARISON_FEATURE_SURFACE_SX,
+  px: 2,
+  py: 1,
+  borderRadius: "8px",
+  mb: 2,
+};
+
+export const COMPARISON_MOBILE_CHIP_BASE_SX = {
+  fontWeight: 600,
+  fontSize: "0.75rem",
+  mb: 0.5,
+};
+
 export const Works = [
   {
     title: "ShopeyeQ",
@@ -262,6 +318,13 @@ export const Works = [
     role: "App Design",
     image: "/LatestWorkImages/ShopeyeQPhone.png",
     circle: "/LatestWorkImages/ShopeyeQCircle.png",
+  },
+  {
+    title: "ShopeyeQ",
+    name: "ShopeyeQ-Desktop",
+    role: "Dashboard",
+    image: "/LatestWorkImages/ShopeyeQDesktop.svg",
+    circle: "/LatestWorkImages/ShopeyeQDesktopCircle.svg",
   },
   {
     title: "HUDU",
@@ -511,7 +574,7 @@ export const ListTypography = styled(Typography)(({ theme, title }) => ({
   fontSize: 20,
   lineHeight: "26px",
   color: "#1F1F1F",
-  paddingBottom: 20,
+  // paddingBottom: 20,
   display: "inline",
   [theme.breakpoints.down("md")]: {
     fontSize: 15,
@@ -815,6 +878,72 @@ export const SurveyPercentages = [
   { text: "of users find real-time data access crucial", number: "85%" },
 ];
 
+export const KeyFindingsListShopeyeQ = [
+  { desc: "“I waste too much time pulling reports from different sources.” → Need for integrated real-time insights" },
+  {
+    desc: "“Assigning tasks manually is frustrating.” → Need for a smart, automated assignment system",
+  },
+  {
+    desc: "“We lack visibility into field team performance.” → Need for a clear KPI tracking system",
+  },
+];
+
+export const KeyDesignListShopeyeQ = [
+  { desc: "Simplicity First – Avoid overwhelming users with excessive data. Prioritize clarity." },
+  {
+    desc: "One-Click Actions – Enable quick task assignments, performance checks, and report generation.",
+  },
+  {
+    desc: "Customizable Insights – Let managers filter and personalize their dashboards.",
+  },
+  {
+    desc: "Mobile-Friendly Design – Ensure access on tablets and mobile devices for on-the-go managers.",
+  },
+];
+
+export const InformationListShopeyeQ = [
+  { desc: "Assignments & Task Manager – Assign, track, and manage field tasks efficiently." },
+  { desc: "People & Team – View and manage field representatives, monitor performance, and assign roles." },
+  { desc: "Business Intelligence – Real-time data insights, reports, and analytics for strategic decision-making." },
+  { desc: "All Products & Portfolio – Manage product listings, track availability, and oversee portfolio performance." },
+  { desc: "Onboarding – Guide new users through a structured setup process." },
+  { desc: "Competitor Brands – Track competitor activities, analyze market trends, and adjust strategies." },
+  { desc: "Promotions – Set up and monitor promotional campaigns and sales activations." },
+  { desc: "Point of Sale (POS) – Oversee store performance, inventory status, and sales impact." },
+  { desc: "Account Management – Configure user roles, permissions, and system settings." },
+];
+
+export const UsabilityTestingShopeyeQ = [
+  {desc: 'Evaluate Navigation & Information Hierarchy - Ensure managers could easily find and access essential sections.'},
+  {desc: 'Assess Task Assignment & Tracking Flows - Test how intuitively users could assign tasks and monitor team performance.'},
+  {desc: 'Measure Data Interpretation & Decision-Making - Observe how managers interacted with KPIs, reports, and insights.'},
+  {desc: 'Identify Pain Points & Friction Areas - Detect any usability blockers that slowed down efficiency.'},
+];
+
+export const tableDataShopeyeQ = [
+  {
+    feature: "Zoho CRM",
+    strength: "Strong automation, good reporting tools",
+    weakness: "Can feel cluttered, steep learning curve",
+  },
+  {
+    feature: "Salesforce",
+    strength: "Powerful analytics, customizable dashboards	",
+    weakness: "Complex UI, requires extensive setup",
+  },
+  {
+    feature: "Repsly",
+    strength: "Excellent field team tracking, mobile-first",
+    weakness: "Lacks deep customization for managers",
+  },
+  {
+    feature: "Pepperi",
+    strength: "Strong B2B sales automation, omnichannel insights",
+    weakness: "UI can feel outdated, limited workflow flexibility",
+  },
+];
+
+
 export const TableRowText = styled(Typography)(({ theme }) => ({
   fontFamily: `'Satoshi', sans-serif`,
   fontWeight: 400,
@@ -839,6 +968,36 @@ export const TableColumnText = styled(Typography)(({ theme }) => ({
   fontSize: 20,
   color: "white",
   lineHeight: "26px",
+}));
+
+export const GridTitle = styled(Typography)(({ theme }) => ({
+  fontFamily: `'Satoshi', sans-serif`,
+  fontWeight: 700,
+  fontSize: 20,
+  color: "#111111",
+  lineHeight: "130%",
+  letterSpacing:"0%",
+   [theme.breakpoints.down("md")]: {
+    fontSize: 18,
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 16,
+  },
+}));
+
+export const GridDescription = styled(Typography)(({ theme }) => ({
+  fontFamily: `'Satoshi', sans-serif`,
+  fontWeight: 500,
+  fontSize: 20,
+  color: "#111111",
+  lineHeight: "130%",
+  letterSpacing:"0%",
+  [theme.breakpoints.down("md")]: {
+    fontSize: 18,
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 16,
+  },
 }));
 
 export const PrototypeButtonText = styled(Typography)(({ theme }) => ({

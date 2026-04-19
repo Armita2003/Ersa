@@ -6,6 +6,7 @@ import { Hudu } from "./Apps/Hudu";
 import { ShopeyeQ } from "./Apps/ShopeyeQ";
 import { Welf } from "./Apps/Welf";
 import { YatYap } from "./Apps/YatYap";
+import { ShopeyeQDesktop } from "./Apps/ShopeyeQDesktop";
 
 export default function WorkDetail() {
     const router = useRouter();
@@ -18,6 +19,9 @@ export default function WorkDetail() {
             }
             if (id == "ShopeyeQ") {
                 return <ShopeyeQ />;
+            }
+            if (id == "ShopeyeQ-Desktop") {
+                return <ShopeyeQDesktop />;
             }
             if (id == "HUDU") {
                 return <Hudu />;
