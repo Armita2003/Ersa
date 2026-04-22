@@ -327,6 +327,13 @@ export const Works = [
     circle: "/LatestWorkImages/ShopeyeQDesktopCircle.svg",
   },
   {
+    title: "YouDoo",
+    name: "YouDoo",
+    role: "App Design",
+    image: "/LatestWorkImages/YouDooPhone.svg",
+    circle: "/LatestWorkImages/YouDooCircle.svg",
+  },
+  {
     title: "HUDU",
     name: "HUDU",
     role: "App Design",
@@ -341,6 +348,13 @@ export const Works = [
     circle: "/LatestWorkImages/YatYapCircle.png",
   },
   {
+    title: "Apsy",
+    name: "Apsy",
+    role: "UX research / Design",
+    image: "/LatestWorkImages/ApsyLaptop.png",
+    circle: "/LatestWorkImages/ApsyCircle.png",
+  },
+  {
     title: "WelfLab",
     name: "WelfLab",
     role: "Landing Page",
@@ -353,13 +367,6 @@ export const Works = [
     role: "Landing Page",
     image: "/LatestWorkImages/AppBakerLaptop.png",
     circle: "/LatestWorkImages/AppBakerCircle.png",
-  },
-  {
-    title: "Apsy",
-    name: "Apsy",
-    role: "UX research / Design",
-    image: "/LatestWorkImages/ApsyLaptop.png",
-    circle: "/LatestWorkImages/ApsyCircle.png",
   },
 ];
 
@@ -771,11 +778,77 @@ export const HybridCardSortingList = [
   { desc: "A “Get in Touch” button was added as a separate, prominent call-to-action for accessibility." },
 ];
 
+export const SocialListeningList = [
+  {
+    desc: "Difficulty keeping track of multiple apps and data points.",
+  },
+  {
+desc:"Limited personalization in workout and meal recommendations"
+  },
+  {
+    desc: "Feeling unmotivated or isolated without social accountability"
+  }
+];
+
+export const SecondSocialListeningList = [
+  {
+    desc: "Integrated tracking of mood, movement, and nutrition in one platform",
+  },
+  {
+    desc: "Personalized recommendations based on goals, restrictions, and habits"
+  },
+  {
+    desc: "Social motivation through challenges, leaderboards, and friend support"
+  }
+];
+
+export const LowFidelityWireframesList = [
+  {
+    desc: "Onboarding & Profile Setup - Quick setup of mood, activity, diet, and restrictions.",
+  },
+  {
+    desc: "Daily Mood & Activity Logging - Easy, one-tap check-ins and activity updates."
+  },
+  {
+    desc: "Movement Challenges & Leaderboards - Browsing, joining, and tracking challenges with friends."
+  },
+  {
+    desc: "Nutrition & Recipe Discovery - Browsing recipes, generating shopping lists, and scanning items for dietary compatibility."
+  },
+  {
+    desc: "Insights & Progress Dashboard - Visual summaries of mood, movement, and nutrition trends."
+  },
+];
+
+export const DesignSystemList = [
+  {
+    desc: "Color Palette – Soft, calming tones with vibrant accents to reflect mood and energy",
+  },
+  {
+    desc: "Typography – Clean, readable type for clear hierarchy and quick scanning"
+  },
+  {
+    desc: "Components – Reusable UI elements such as buttons, cards, sliders, and navigation"
+  },
+  {
+    desc: "Iconography – Simple, expressive icons to enhance usability and emotional connection"
+  },
+  {
+    desc: "Interaction Patterns – Defined behaviors for gestures, transitions, and feedback"
+  },
+];
+
 export const CompetitiveAnalysisList = [
   { desc: "Gain insights into digital product trends" },
   { desc: "Identify the target market and competitors" },
   { desc: "Understand how businesses discover and engage with digital solutions" },
   { desc: "Evaluate common pain points in digital product development" },
+];
+
+export const PostLaunchMonitoringList = [
+  { desc: "User feedback and app reviews" },
+  { desc: "Analytics on drop-off points and feature adoption" },
+  { desc: "Behavioral patterns in daily usage and long-term engagement" },
 ];
 
 export const UserInterviewList = [
@@ -1009,6 +1082,25 @@ export const PrototypeButtonText = styled(Typography)(({ theme }) => ({
   textTransform: "none",
   textUnderlineOffset: "8px",
   textDecoration: "2px white underline",
+  [theme.breakpoints.down("md")]: {
+    fontSize: 14,
+    fontWeight: 700,
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 10,
+    fontWeight: 600,
+  },
+}));
+
+export const YouDooPrototypeButtonText = styled(Typography)(({ theme }) => ({
+  fontFamily: `'Satoshi', sans-serif`,
+  fontWeight: 900,
+  fontSize: 24,
+  color: "black",
+  lineHeight: "24px",
+  textTransform: "none",
+  textUnderlineOffset: "8px",
+  textDecoration: "2px black underline",
   [theme.breakpoints.down("md")]: {
     fontSize: 14,
     fontWeight: 700,

@@ -7,6 +7,7 @@ import { ShopeyeQ } from "./Apps/ShopeyeQ";
 import { Welf } from "./Apps/Welf";
 import { YatYap } from "./Apps/YatYap";
 import { ShopeyeQDesktop } from "./Apps/ShopeyeQDesktop";
+import { YouDoo } from "./Apps/YouDoo";
 
 export default function WorkDetail() {
     const router = useRouter();
@@ -22,6 +23,9 @@ export default function WorkDetail() {
             }
             if (id == "ShopeyeQ-Desktop") {
                 return <ShopeyeQDesktop />;
+            }
+            if (id == "YouDoo") {
+                return <YouDoo />;
             }
             if (id == "HUDU") {
                 return <Hudu />;
