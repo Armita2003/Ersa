@@ -13,7 +13,7 @@ export default function LatestWorkGrid() {
 
     return (
         <Stack mb={SmallScreen ? 8 : 22.3}>
-            <Grid container sx={{ rowGap: 2.5, columnGap: 2.5, display: "flex", justifyContent: "space-evenly" }}>
+            <Grid container sx={{ rowGap: 2.5, columnGap: 2.5, display: "flex", justifyContent: "start" }}>
                 {Works.map((items, index) => {
                     return (
                         <Grid key={index} item xs={12} md={5.8} lg={3.8}>
